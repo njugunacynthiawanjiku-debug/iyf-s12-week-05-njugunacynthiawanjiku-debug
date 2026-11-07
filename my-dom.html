@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My DOM Practice</title>
+    <style>
+        .highlight { background-color: yellow; }
+        .container { padding: 20px; border: 1px solid #ccc; }
+        .hidden { display: none; }
+        .accent { color: #8e2a5b; }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>My DOM Practice</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article data-id="42" data-category="tech">
+            <h2 class="title">Article Title</h2>
+            <p class="content">This is the first paragraph.</p>
+            <p class="content">This is the second paragraph.</p>
+        </article>
+
+        <section>
+            <h2>Form Section</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Amina">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="name@gmail.com">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="injection-demo">
+            <h2>Injection demo</h2>
+            <div id="unsafe"></div>
+            <div id="safe"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026</p>
+    </footer>
+
+    <script src="my-dom.js"></script>
+</body>
+</html>
